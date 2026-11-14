@@ -1,0 +1,15 @@
+resources:
+  pipelines:
+    pipeline_pipelien_new:
+      name: pipelien_new
+      libraries:
+        - glob:
+            include: ../../src/pipelien_new/transformations/**
+      schema: default
+      continuous: false
+      development: false
+      photon: true
+      channel: CURRENT
+      catalog: workspace
+      serverless: true
+      root_path: ../../src/pipelien_new
